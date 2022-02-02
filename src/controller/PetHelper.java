@@ -36,6 +36,7 @@ public class PetHelper {
 		em.getTransaction().begin();
 		TypedQuery<Pet> typedQuery = em.createQuery("select li from Pet li where li.id = :selectedId and li.name = :selectedName", Pet.class);
 		typedQuery.setParameter("selectedId", toDelete.getId());
+		//typedQuery.setParameter("selectedType", toDelete.getType());
 		typedQuery.setParameter("selectedName", toDelete.getName());
 		typedQuery.setMaxResults(1);
 		Pet result = typedQuery.getSingleResult();

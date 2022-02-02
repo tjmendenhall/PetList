@@ -27,13 +27,11 @@ public class StartProgram {
 
 		private static void deleteAPet() {
 			// TODO Auto-generated method stub
-			System.out.print("Enter the pet's name to delete: ");
-			String name = in.nextLine();
-			System.out.print("Enter the pet's type to delete: ");
-			String type = in.nextLine();
-			System.out.print("Enter the pet's diet to delete: ");
-			String diet = in.nextLine();
-			Pet toDelete = new Pet(type, name, diet);
+			System.out.println("Enter the pet's ID to delete: ");
+			int id = in.nextInt();
+			System.out.println("Enter the pet's name to delete: ");
+			String name = in.next();
+			Pet toDelete = new Pet(id, name);
 			ph.deletePet(toDelete);
 		}
 
@@ -83,7 +81,7 @@ public class StartProgram {
 				} else if (update == 3) {
 					System.out.print("New Diet: ");
 					String newDiet = in.nextLine();
-					toEdit.setName(newDiet);
+					toEdit.setDiet(newDiet);
 				}
 
 				ph.updatePet(toEdit);

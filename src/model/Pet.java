@@ -37,6 +37,37 @@ public class Pet {
 	}
 	
 	/**
+	 * @param type2
+	 * @param name2
+	 */
+	public Pet(String type, String name) {
+		// TODO Auto-generated constructor stub
+		super();
+		this.type = type;
+		this.name = name;
+	}
+
+	/**
+	 * @param id2
+	 * @param type2
+	 * @param name2
+	 */
+	public Pet(int id, String type, String name) {
+		// TODO Auto-generated constructor stub
+		super();
+		this.id = id;
+		this.type = type;
+		this.name = name;
+	}
+	
+	public Pet(int id, String name) {
+		// TODO Auto-generated constructor stub
+		super();
+		this.id = id;
+		this.name = name;
+	}
+
+	/**
 	 * @return the id
 	 */
 	public int getId() {
