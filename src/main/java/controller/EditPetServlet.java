@@ -50,7 +50,7 @@ public class EditPetServlet extends HttpServlet {
 		petToUpdate.setName(name);
 		petToUpdate.setDiet(diet);
 		dao.updatePet(petToUpdate);
-		getServletContext().getRequestDispatcher("/viewAllItemsServlet").forward(request, response);
+		getServletContext().getRequestDispatcher("/viewAllPetsServlet").forward(request, response);
 	}
 
 }
