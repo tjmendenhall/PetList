@@ -36,8 +36,8 @@
 			type="submit" value="add" name="doThisToList">
 
 	</form>
-	<a href="addItemsForListServlet">Create a new list</a>
+	<a href="addPetsForListServlet">Create a new list</a>
 	<br />
-	<a href="index.html">Insert a new item</a>
+	<a href="index.html">Home</a>
 </body>
 </html>

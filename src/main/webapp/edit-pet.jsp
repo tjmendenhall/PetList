@@ -15,5 +15,6 @@
 	<input type = "hidden" name = "id" value="${petToEdit.id}">
 	<input type = "submit" value="Save Edited Pet">
 	</form>
+	<a href="index.html">Home</a>
 </body>
 </html>
