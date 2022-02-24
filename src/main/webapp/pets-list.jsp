@@ -13,8 +13,8 @@
 	<c:forEach items="${requestScope.allPets}" var="currentpet">
 	<tr>
  		<td><input type="radio" name="id" value="${currentpet.id}"></td>
- 		<td>Type: ${currentpet.type}</td>
- 		<td>Name: ${currentpet.name}</td>
+ 		<td>Type: ${currentpet.type}<br /></td>
+ 		<td>Name: ${currentpet.name}<br /></td>
  		<td>Diet: ${currentpet.diet}</td>
  	</tr>
 	</c:forEach>
@@ -24,5 +24,10 @@
 	<input type = "submit" value = "delete" name="doThisToPet" class="btn btn-danger">
 	<input type="submit" value = "add" name = "doThisToPet" class="btn btn-success">
 	</form>
+	<a href="index.html">Home</a>
+	<br />
+	<a href="viewAllListsServlet">View all pet lists</a>
+	<br />
+	<a href="addPetsForListServlet">Create a new pet list</a>
 </body>
 </html>

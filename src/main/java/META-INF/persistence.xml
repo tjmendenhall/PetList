@@ -3,12 +3,13 @@
 	<persistence-unit name="PetList" transaction-type="RESOURCE_LOCAL">
 		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
 		<class>model.Pet</class>
+		<class>model.Owner</class>
+		<class>model.ListDetails</class>
 		<properties>
 			<property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
 			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/pets"/>
 			<property name="javax.persistence.jdbc.user" value="tjmendenhall"/>
 			<property name="javax.persistence.jdbc.password" value="Gecko123"/>
-			<property name="eclipselink.ddl-generation" value="create-tables"/>
 		</properties>
 	</persistence-unit>
 </persistence>

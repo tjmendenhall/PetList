@@ -126,5 +126,12 @@ public class Pet {
 	public String returnPetDetails() {
 		return "ID: " + this.id + "\nType: " + this.type + "\nName: " + this.name + "\nDiet: " + this.diet;
 	}
+
+	@Override
+	public String toString() {
+		return "Pet [id=" + id + ", type=" + type + ", name=" + name + ", diet=" + diet + "]";
+	}
+	
+	
 	
 }

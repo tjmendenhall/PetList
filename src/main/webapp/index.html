@@ -5,12 +5,16 @@
 <title>Pet List Home</title>
 </head>
 <body>
-	<form action = "addPetServlet" method="post">
-	Type: <input type ="text" name = "species">
-	Name: <input type = "text" name = "name">
-	Diet: <input type = "text" name = "diet">
-	<input type = "submit" value="Add Pet">
-	</form> <br />
-<a href = "viewAllPetsServlet">View the complete list</a>
+	<form action="addPetServlet" method="post">
+		Type: <input type="text" name="species"> Name: <input
+			type="text" name="name"> Diet: <input type="text" name="diet">
+		<input type="submit" value="Add Pet">
+	</form>
+	<br />
+	<a href="viewAllPetsServlet">View all pets</a>
+	<br />
+	<a href="viewAllListsServlet">View all pet lists</a>
+	<br />
+	<a href="addPetsForListServlet">Create a new pet list</a>
 </body>
 </html>

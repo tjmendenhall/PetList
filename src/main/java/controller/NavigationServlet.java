@@ -50,6 +50,7 @@ public class NavigationServlet extends HttpServlet {
 				Integer tempId = Integer.parseInt(request.getParameter("id"));
 				Pet petToDelete = dao.searchForPetById(tempId);
 				dao.deletePet(petToDelete);
+				path = "/index.html";
 			} catch (NumberFormatException e) {
 				System.out.println("Forgot to select a pet");
 			}
